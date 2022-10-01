@@ -1,0 +1,474 @@
+		Jobma_runserver command 
+python3 manage.py runserver --settings jobma_api.settings.local                                                                                                                             			
+
+			palindrom number code . 
+
+n = int(input("entre any number "))
+s=n
+sum = 0
+while(n>0):
+    r = n%10
+    sum = sum*10+r
+    n = n//10
+if sum == s:
+    print('no. is palindrom ')
+else:
+    print("no is not palindrom ")
+
+
+
+				polymerphism example
+
+
+class Bird:
+    def intro(self):
+        print("this is word intro")
+    def flight(self):
+        print('bird can fly')
+class sparrow(Bird):
+    def intro(self):
+        print("this is sparrow intro")
+    def flight(self):
+        print('sparrow can flight in the sky')
+class crow(Bird):
+    def intro(self):
+        print("this is crow intro")
+    def flight(self):
+        print('some crow can flight but some can not ')
+b = Bird()
+s = sparrow()
+c = crow()
+b.intro()
+b.flight()
+s.intro()
+s.flight()
+c.intro()
+c.flight()
+
+					polymerphism example 2
+class India:
+    def captial(self):
+        print("delhi is captical of india ")
+
+    def language(self):
+        print("hindi speak in india only but english speak anywhere in the world ")
+
+class Usa:
+    def captial(self):
+        print("washington is the captical of USA ")
+
+    def language(self):
+        print("In usa speak language ") 
+
+I = India()
+U = Usa()
+I.captial()
+I.language()
+U.captial()
+U.language()
+
+
+
+        				inheritance example
+
+class Computer:
+    def write(self):
+        print("write on notepad")
+class hp(Computer):
+    def pen(self):
+        print('write on copy')
+h = hp()
+h.write()
+h.pen()
+
+					single inheritanace exaample
+
+class India:
+    def captial(self):
+        print("delhi is captical of india ")
+
+    def language(self):
+        print("hindi speak in india only but english speak anywhere in the world ")
+
+    def father(self):
+        print("India is fathor of pakistan ") 
+
+class Pakistan(India):
+    def captial(self):
+        print("washington is the captical of USA ")
+
+    def language(self):
+        print("In usa speak language ") 
+
+    def son(self):
+        print("pakistan is son of india ")
+
+I = India()
+p = Pakistan()
+p.son()
+p.father()
+
+				        # multiple inheritance example
+
+class Mother:
+    def mother(self):
+        print("maa is the best in the world for matritiv property ")
+
+class Father:
+    def father(self):
+        print("father is the best in the world for improvement own son ")
+
+class Son(Mother, Father):
+    def son(self):
+        print("son is responsibility of serve own parent ") 
+
+s = Son()
+s.mother()
+s.father()
+s.son()
+
+					fabonacci series example
+
+
+
+n = int(input("entre any number "))
+def fib(n):
+    a = 0
+    b = 1
+    sum = 0
+    if n == 1:
+        print(b)
+    else:
+        for i in range(0,n):
+            print(a) 
+            sum = sum + a 
+            c = a+b
+            a = b
+            b = c 
+        print("sum of fabonacci series ", sum)
+
+fib(n) 
+
+					fabonacci series example 2
+
+
+n = int(input("entre any number ")) 
+a = 0
+b = 1
+sum = 0
+if n == 1:
+    print(b, end = " ")
+else:
+    for i in range(0,n):
+        print(a)
+        sum = sum+a
+        c = a+b 
+        a = b
+        b = c
+    print("sum of fabonacci series ", sum)
+
+
+
+					Arm strong number 
+n=int(input("Enter any number "))
+a=n
+s=0
+while(n>0):
+     r=n%10
+     s=s+r**3
+     n=n//10
+if(s==a):
+    print("Number is armstrong ")
+else:
+    print("Number is not armsstrong ")
+
+					Factorial program 
+n=int(input("Enter any number "))
+fact=1
+if(n==0) or (n==1):
+    print(" factorial of number is  1")
+else:
+    for i in range(1,n+1):
+        fact=fact*i
+print("Factorial of given number is ", fact)
+
+					Reverse no. program 
+n=int(input("Entre any number "))
+temp=n
+rev=0
+while n>0:
+    r=n%10
+    rev=(rev*10)+r
+    n=n//10
+print("Reverse no. of that no. " , rev)
+
+					# terinury operator in python
+a, b, c = 10, 20, 50
+max = a if a>b>c else b if b>c else c
+print(max)
+
+
+
+					prime no. example 
+
+
+n = int(input("entre any number "))
+if n>1:
+    for i in range(2, int(n/2)+1):
+        if n%i ==0:
+            print("no. is not prime", n)
+            break
+    else:
+        print(n, "is a prime number")
+else:
+            print("no. is not prime",n) 
+
+					method 2 prime no.
+
+from primePy import primes			# pip install primePy packeage 
+print(primes.check(63)) 
+
+					method 3 prime no.best method 
+
+n=int(input("Enter a number:"))
+if n>1:
+    for i in range(2,n//2):
+        if(n%i)==0:
+            print(n,"is not a prime number")
+            break
+    else:
+        print(n,"is a prime number")
+else:
+    print(n,"is neither prime nor composite")
+
+					method 4 prime no. 
+n = int(input("entre any number "))
+def prime(n):
+    if n>1:
+        for i in range(2,n):
+            if n % i ==0:
+                return False
+            return True
+    else:
+        return False
+print(prime(n))
+
+					Swapping program 
+
+a = 10
+b = 23
+print("swaping value before ", a,b )
+c = a
+a = b 
+b = c 
+print("swaping value after ", a,b)
+
+					
+
+					print Factorial program
+
+n = int(input("entre any number "))
+fact = 1
+if n ==0 or n ==1:
+    print("factorial of no. is ", 1)
+else:
+    for i in range(2,n+1):
+        fact = fact*i
+    print("factorial of no.",n ,"=", fact)
+
+
+				nested list access element
+
+l = [[1,2,4],[5,6,7],[8,9,3]]
+for list in l:
+    for list2 in list:
+        print(l[1][0])
+
+				function calling add two number program
+
+def add(a,b):
+    sum = a+b
+    return sum
+n = int(input("entre any number "))
+m = int(input("entre second number "))
+print('sum of two number' , n, '&' ,m  , add(n,m))
+
+					GIT BRANCH CODE 
+ 	sudo git branch branchname
+	sudo git checkout -b <branchname>
+	sudo git status
+	sudo git add employer_api/jobma_api/v7/views.py
+	sudo git commit -m "space updated"
+	sudo git push origin <branchname>
+	open browser link
+	sudo git pull origin master
+	sudo git stach or sudo git stach pop - > delete for changeble code.
+	sudo git clone <branch_link>
+		
+
+
+				compression list
+l = [i  for i in range(20)]	# compression list example.
+
+l = [[i for i in range(4)]  for j in range(4) ]
+print(l)
+
+r = int(input('entre no. of rows '))
+c = int(input('entre no. of column '))
+l = [[i for i in range(r)]  for j in range(c)]
+print(l)
+
+a = list([[i for i in range(4)] for j in range(3)])
+print(a)
+
+
+
+
+l = lambda a,b: a if a>b  else b
+print(l(6,8))
+
+result = lambda x : f"{x} is even" if x %2==0 else f"{x} is odd"
+print(result(int(input('entre any number '))))
+
+			duplicate value remove from list
+
+l = [ 1,2,43,2,54,43,67,12,34,43,898]
+s= [*set(l)]
+print(s)
+
+			or 
+
+from collections import OrderedDict
+l = [ 1,2,43,2,54,43,67,12,34,43,898]
+# s= [*set(l)]
+res = list(OrderedDict.fromkeys(l))
+print(res)
+
+				serializer concept 
+
+from django.contrib.auth import authenticate
+from rest_framework import serializers, exceptions
+
+
+class LoginUserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserModel
+        fields = ('username', 'password')
+
+    def validate(self, data):
+        user = authenticate(**data)
+        if user:
+            if user.is_active:
+                return user
+            raise exceptions.AuthenticationFailed('Account is not activated')
+        raise exceptions.AuthenticationFailed()
+
+
+CREATE TABLE `mytable` ( 
+`id` INTEGER NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+`created` TIMESTAMP DEFAULT '0000-00-00 00:00:00', 
+`updated` TIMESTAMP DEFAULT now() ON UPDATE now(),
+`myfield` VARCHAR(255)
+); 
+
+
+			GIT COMMAND.	
+git config --global user.name "entre name"
+git config --global user.email " entre your mail"
+git status
+mkdir mukesh
+git init
+git add main.c
+git status
+git commit -m "save the file"
+git status
+git remote add origin  " https//github.com____________"
+git push origin master
+git commit -m "second times save file"
+git clone  "https://github.com________" git clone command used in folder. 
+git pull origin master
+git branch <branch_name> 	# create new branch
+git branch 	# tell about total branch in git
+git checkout <branch_name> 		# switch to new branch
+git branch -D <branch_name>		# delete branch name
+
+		example: -
+git branch hello
+git checkout hello
+touch random.c
+git add random.c
+git commit -m " added random faile in hello branch"
+git push origin hello
+sudo nano main.c
+git add main.c
+git commit -m "modified file of main.c"
+git push origin hello
+		example end
+
+
+		these command used after.
+git log 			
+git stash
+git revert
+git diff
+git merge
+git rebase
+git fetch
+git reset
+
+
+			dictionary value update
+	d = {"name": "mukesh"}
+	print(d)
+	d1 = {"name":"priya"}
+	d.update(d1)
+	print(d)
+
+
+			virtual enviroment in windows
+pip install virtualenv 
+$ cd Desktop
+$ mkdir myproject
+$ cd myproject 
+pip install virtualenv
+$ virtualenv env
+$ cd env
+$ Scripts\activate.bat
+$ pip install django
+
+			# logout api
+
+ 
+class LogoutApiview(APIView):	
+	def post(self, request, format = None):
+		try:
+			refresh_token = request.data.get('refresh_token')
+			token_obj = RefreshToken(refresh_token)
+			token_obj.blacklist()
+			return Response(status = status.HTTP_200_OK)
+		except Exception as e:
+			return Response(status = status.HTTP_400_BAD_REQUEST)
+
+
+					# list important program
+
+l = [10,20,30,40,50]
+m  = []
+s = l.copy()
+print(s)
+m = s
+m.append(67)
+print(m) 
+
+					# compression dict. example
+
+myDict = {x: x**2 for x in [1,2,3,4,5]}
+print (myDict)
+
+
+l = [12,42,53,55,65,31]
+d = {k: k for k in l}
+print(d)
+
+newdict = {x: x**3 for x in range(10) if x**3 % 4 == 0}
+print(newdict)
